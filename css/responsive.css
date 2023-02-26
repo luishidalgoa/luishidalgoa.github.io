@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+    .fa-chevron-left{
+        display: none!important;
+    }
+    .fa-chevron-right{
+        display: none!important;
+    }
+    .fs-1{
+        font-size: 2em!important;
+    }
+    #firma{
+        width: 14em;
+    }
+}
+@media(min-width: 576px){
+    .fa-chevron-left{
+        display: block!important;
+    }
+    .fa-chevron-right{
+        display: block!important;
+    }
+    #header{
+        border-bottom: none!important;
+    }
+    #bars{
+        display: none;
+    }
+    #firma{
+        width: 14em;
+    }
+}

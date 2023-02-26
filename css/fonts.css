@@ -1,0 +1,64 @@
+.Shantell-Sans {
+    font-family: 'Shantell Sans', cursive;
+}
+
+.fs-10 {
+    font-size: 2.5rem !important;
+}
+
+.text-linkedink {
+    color: rgb(24, 102, 190);
+}
+
+p {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.vfs-1 {
+    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+    font-size: 10vw!important;
+}
+.vfs-3 {
+    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+    font-size: 5vw!important;
+}
+.vfs-4 {
+    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+    font-size: 4vw!important;
+}
+
+.vfs-5 {
+    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+    font-size: 3vw !important;
+}
+
+.no-wrap {
+    max-width: 100%;
+    /* Limita la anchura del texto al ancho del contenedor */
+    white-space: nowrap;
+    /* Evita que el texto salte de línea */
+}
+
+.parraf {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+@media (min-width:576px) {
+    .vfs-1{
+        font-size: 6vw!important;
+    }
+    .vfs-3 {
+        /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+        font-size: 4vw!important;
+    }
+    .vfs-4 {
+        /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+        font-size: 3vw!important;
+    }
+    
+    .vfs-5 {
+        /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
+        font-size: 2vw!important;
+    }
+}

@@ -1,0 +1,57 @@
+#bars {
+    color: black;
+    font-size: 2rem;
+}
+
+#language {
+    font-size: 2rem;
+    color: rgb(55, 133, 194);
+}
+
+#instagram {
+    opacity: 100%;
+    background-image: linear-gradient(to left bottom, rgb(149, 56, 165), rgb(250, 143, 33));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-i {
+    transition-duration: 0.25s;
+}
+
+.bg-i:hover {
+    background-color: rgb(211, 211, 211, 0.5);
+    scale: 1.05;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px rgb(139, 139, 139, 0.5);
+    color: black !important;
+}
+
+.bg-i:active {
+    scale: 0.95;
+}
+
+.fa-java {
+
+    background-image: rgb(87, 129, 159);
+    background-image: linear-gradient(0deg, rgba(87, 129, 159, 1) 0%,
+            rgba(87, 129, 159, 1) 75%,
+            rgba(253, 187, 45, 1) 76%,
+            rgba(253, 187, 45, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    /* establece el color de fondo del elemento como transparente para que el gradiente de color sea visible */
+    color: transparent;
+}
+
+.scroll-line {
+    background: linear-gradient(217deg, rgb(203, 29, 38), rgb(203, 29, 38)),
+        linear-gradient(127deg, rgb(203, 29, 38), rgb(203, 29, 38)),
+        linear-gradient(336deg, rgb(203, 29, 38), rgb(203, 29, 38));
+    top: 0;
+    left: 0;
+    height: 5px;
+    position: fixed;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 0.5);
+}
