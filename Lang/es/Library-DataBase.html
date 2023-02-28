@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Portfolio Index</title>
+  <!--Estilos locales-->
+  <link rel="stylesheet" href="/css/style-background.css">
+  <link rel="stylesheet" href="/css/style-footer.css">
+  <link rel="stylesheet" href="/css/generic-style.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <!--Estilos externos-->
+  <script src="https://kit.fontawesome.com/ee94bf2f3c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://use.typekit.net/upo3utk.css">
+</head>
+
+<body class="bg-whiteGray">
+  <div class="scroll-line rounded-4"></div>
+  <div class="container d-flex p-3 p-sm-0 ">
+    <div class="rounded-3 bg-light border border-dark w-100"><!--Contenedor de elementos-->
+      <header class="d-flex justify-content-between border-bottom p-1 border-dark" id="header">
+        <nav class="p-0 navbar navbar-expand-sm bg-body-tertiary">
+          <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">menu</i>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
+              <a class="nav-link" aria-current="page" href="index.html">Sobre mí</a>
+              <a class="nav-link" href="Proyects.html">Mis proyectos</a>
+              <a class="nav-link" href="Education&Certification.html">Educacion y certificaciones</a>
+            </div>
+          </div>
+        </nav>
+        <nav class="p-0 navbar bg-body-tertiary justify-content-end">
+          <i class="material-symbols-outlined p-2 text-nowrap bg-i" id="language" data-bs-toggle="collapse"
+            data-bs-target="#navbarLanguage" aria-controls="navbarLanguage" aria-expanded="false"
+            aria-label="Toggle navigation">language</i>
+          <div class="collapse navbar-collapse text-end p-1" id="navbarLanguage">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">English</a>
+              <a class="nav-link" onclick="cambiarIdioma('es')">Spanish</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="text-center">
+        <div class="row w-100 m-0 justify-content-center mt-5"> <!-- Texto-->
+          <p class="fw-bolder vfs-1">Library-DataBase</p>
+          <img class=" img-fluid w-50" src="/content/Articles/Library-DataBase/logo.jpeg" alt="">
+          <p class="vfs-4">Link al repositorio en GitHub</p>
+          <div class="d-flex justify-content-center">
+            <icon class="fa-brands fa-github vfs-3">
+              <a href="https://github.com/luishidalgoa/Library-DataBase" class="text-dark">LINK</a>
+          </div>
+        </div>
+      </section>
+      <div class="p-5 row justify-content-center">
+        <p class="vfs-3 fw-bold">Sistema de gestión de bibliotecas</p>
+        <p class="vfs-5 tk-study-variable parraf">Este es un proyecto de laboratorio de Java.
+          ¿Te gustaría saber cómo crear un sistema de gestión de bibliotecas que te permita registrarte y consultar el
+          libros y revistas disponibles, así como prestarlos a los usuarios? En este artículo te voy a contar cómo
+          han desarrollado este proyecto como parte de unas prácticas de 1ºDAM en el IES Francisco de los Ríos. Además,
+          lo haré
+          explicar qué tecnologías he utilizado, qué dificultades he encontrado y qué beneficios tiene esta experiencia
+          me ha traído.
+        </p>
+        <p class="vfs-3 fw-bold">¿Qué es un sistema de gestión de bibliotecas?</p>
+        <img src="/Content/Articles/Library-DataBase/1.png" class="w-75 mt-3 mb-3" alt="">
+        <p class="vfs-5 tk-study-variable parraf">Un sistema de gestión de bibliotecas es una aplicación informática que
+          facilita
+          la organización y el control de la
+          Material bibliográfico encontrado en una biblioteca. Entre sus principales funciones se encuentran:
+
+          - Registrar los libros y revistas que se encuentran en la biblioteca, con sus datos básicos como título,
+          autor,
+          editorial, año, etc.
+          - Consultar la disponibilidad y estado de los artículos, así como su ubicación dentro de la biblioteca.
+          - Prestar y devolver los artículos a los usuarios, controlando el historial y los plazos.
+          - Generar informes y estadísticas sobre el uso y rendimiento de la biblioteca.
+        </p>
+        <p class="vfs-3 fw-bold">Como surgió este proyecto?</p>
+        <img src="/Content/Articles/Library-DataBase/2.jpg" class="w-75 mt-3 mb-3" alt="">
+        <p class="vfs-5 tk-study-variable parraf mb-5">Este proyecto surgió como una propuesta de la profesora de
+          Programación de
+          el
+          primer año de la formación intermedia
+          ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) en el IES Francisco de los Ríos. El objetivo era
+          poner en práctica los conocimientos adquiridos durante el primer cuatrimestre sobre programación orientada a
+          objetos, estructuras de datos
+          y algoritmos.
+        </p>
+        <p class="vfs-5 tk-study-variable parraf">El profesor nos dio unas pautas generales sobre las funcionalidades
+          que debe tener el sistema, pero se fue
+          libertad para diseñar e implementar nuestra propia solución. También nos animó a investigar y conocer otros
+          tecnologías más avanzadas que podrían mejorar nuestro proyecto.
+        </p>
+        <p class="vfs-3 fw-bold">¿Qué tecnologías he utilizado?</p>
+        <img src="/Content/Articles/Library-DataBase/3.jpg" class="w-75 mt-3 mb-3" alt="">
+        <p class=" vfs-5 tk-study-variable parraf mb-5">Para desarrollar este proyecto he utilizado íntegramente el lenguaje Java,
+          desde
+          es el que hemos estudiado en clase y con el que me siento más cómodo. Además, Java es muy
+          Lenguaje versátil y potente, que permite crear aplicaciones multiplataforma con una gran variedad de
+          bibliotecas disponibles.</p>
+        <p class="vfs-5 tk-study-variable parraf mb-5">Como interfaz gráfica he utilizado la consola de comandos, ya que
+          Todavía tenía que aprender sobre otras tecnologías más avanzadas. La consola me ha permitido crear un simple pero
+          menú funcional para interactuar con el usuario.</p>
+        <p class="vfs-5 tk-study-variable parraf mb-5">Para almacenar los datos del sistema he utilizado un sistema de serialización, así
+          permitiendo compartir y transferir datos entre diferentes sistemas o plataformas de manera eficiente. Al convertir los datos
+          en un formato estandarizado, es más fácil para diferentes programas y sistemas leer y usar la información
+          sin preocuparse por diferencias en la estructura o formato de los datos.</p>
+        <p class="vfs-5 tk-study-variable parraf mb-5">Para organizar el código he utilizado la programación orientada a objetos
+          paradigma (OOP), creando clases para representar las entidades del sistema (libro, revista, edición, usuario) y
+          sus relaciones (herencia, composición). También he aplicado algunos principios básicos como</p>
+      </div>
+      <div class="w-100 d-flex vfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center">
+        <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none"
+          href="https://www.linkedin.com/feed/"></a>
+        <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"></a>
+        <a class="fa-brands fa-instagram text-decoration-none" id="instagram"
+          href="https://www.instagram.com/luishidalgo.esp/"></a>
+        <a class="fa-solid fa-envelope text-primary opacity-75 text-decoration-none"
+          href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"></a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/JS/Typed.js"></script>
+  <script src="/JS/Scroll-Bar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="/JS/language.js"></script>
+</body>
+
+</html>

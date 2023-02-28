@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Portfolio Index</title>
+    <!--Estilos locales-->
+    <link rel="stylesheet" href="/css/style-background.css">
+    <link rel="stylesheet" href="/css/style-footer.css">
+    <link rel="stylesheet" href="/css/generic-style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!--Estilos externos-->
+    <script src="https://kit.fontawesome.com/ee94bf2f3c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://use.typekit.net/upo3utk.css">
+</head>
+
+<body class="bg-whiteGray">
+    <div class="scroll-line rounded-4"></div>
+    <div class="container d-flex p-3 p-sm-0 ">
+        <div class="rounded-3 bg-light border border-dark w-100"><!--Contenedor de elementos-->
+            <header class="d-flex justify-content-between border-bottom p-1 border-dark" id="header">
+                <nav class="p-0 navbar navbar-expand-sm bg-body-tertiary">
+                  <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">menu</i>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
+                      <a class="nav-link" aria-current="page" href="index.html">Sobre mí</a>
+                      <a class="nav-link" href="Proyects.html">Mis proyectos</a>
+                      <a class="nav-link" href="Education&Certification.html">Educacion y certificaciones</a>
+                    </div>
+                  </div>
+                </nav>
+                <nav class="p-0 navbar bg-body-tertiary justify-content-end">
+                  <i class="material-symbols-outlined p-2 text-nowrap bg-i" id="language" data-bs-toggle="collapse"
+                    data-bs-target="#navbarLanguage" aria-controls="navbarLanguage" aria-expanded="false"
+                    aria-label="Toggle navigation">language</i>
+                  <div class="collapse navbar-collapse text-end p-1" id="navbarLanguage">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">English</a>
+                      <a class="nav-link" onclick="cambiarIdioma('es')">Spanish</a>
+                    </div>
+                  </div>
+                </nav>
+              </header>
+            <section class="text-center">
+                <div class="row w-100 m-0 justify-content-center mt-5"> <!-- Texto-->
+                    <p class="fw-bolder vfs-1">HealthLinking</p>
+                    <img class=" img-fluid w-75 pb-4" src="/content/Articles/HealthLinking/logo.jpeg" alt="">
+                    <p class="vfs-4">Link al repositorio en GitHub</p>
+                    <div class="d-flex justify-content-center">
+                        <icon class="fa-brands fa-github vfs-3">
+                            <a href="https://github.com/luishidalgoa/Library-DataBase" class="text-dark">LINK</a>
+                    </div>
+                </div>
+            </section>
+            <div class="p-5 row justify-content-center">
+                <p class="vfs-3 fw-bold">HealthLink</p>
+                <p class="vfs-5 tk-study-variable parraf">
+                    HealthLinking es un software para la gestión de datos médicos que surge como iniciativa de un
+                     proyecto al final del 1er trimestre de DAM. El objetivo del proyecto era llevar a cabo nuestra
+                     primer programa OOP.
+                </p>
+                <p class="vfs-5 tk-study-variable parraf">Los profesionales médicos que trabajan en los centros de salud se enfrentan al día a día
+                    reto de gestionar los datos personales y médicos de los pacientes que atienden. Este dato es
+                    esencial para brindar atención médica de calidad, pero también plantea una responsabilidad y un desafío en
+                    términos de su almacenamiento, protección y acceso.
+                </p>
+                <p class="vfs-5 tk-study-variable parraf">Para facilitar esta tarea, he creado 'HealthLink', un
+                    software destinado a profesionales médicos en centros de salud. Su finalidad es registrar los datos personales.
+                    y datos médicos de los pacientes y acceder a esos datos médicos cuando sea necesario, simplemente ingresando
+                    el número de identificación del paciente. De esta forma, habrá un control médico de los pacientes como
+                    así como una base de datos que también es capaz de almacenar la fecha y hora de todas las citas realizadas en
+                    una consulta</p>
+                <p class="vfs-3 fw-bold">¿Cómo funciona Health Link?</p>
+                <p class="vfs-5 tk-study-variable parraf">HealthLink es un software fácil e intuitivo que se adapta a
+                    las necesidades básicas de los centros de salud. Su funcionamiento se basa en los siguientes pasos:
+                </p>
+                <ul class="vfs-5 tk-study-variable parraf">
+                    <li><b>Registro : </b>El profesional médico ingresa los datos personales y médicos del paciente
+                        en el sistema a través de una interfaz simple y segura. Estos datos están asociados a la
+                        número de identificación del paciente, que puede ser su DNI.
+                    </li>
+                    <li><b>Acceso : </b>El profesional médico accede a los datos médicos del paciente introduciendo su
+                        número de identificación en el sistema. De esta forma podrás ver toda la información relevante sobre
+                        la historia clínica del paciente así como las citas realizadas o pendientes en su consulta.
+                    </li>
+                    <li><b>Update: </b>El profesional médico puede modificar o agregar nuevos datos sobre el paciente cada vez
+                        ella lo atiende o realiza una prueba o intervención. Estos cambios se reflejan automáticamente en
+                        la base de datos para mantenerla actualizada</li>
+                </ul>
+            </div>
+            <div class="w-100 d-flex vfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center">
+                <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none"
+                    href="https://www.linkedin.com/feed/"></a>
+                <a class="fa-brands fa-github text-light text-decoration-none"
+                    href="https://github.com/luishidalgoa"></a>
+                <a class="fa-brands fa-instagram text-decoration-none" id="instagram"
+                    href="https://www.instagram.com/luishidalgo.esp/"></a>
+                <a class="fa-solid fa-envelope text-primary opacity-75 text-decoration-none"
+                    href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/JS/Typed.js"></script>
+    <script src="/JS/Scroll-Bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="/JS/language.js"></script>
+</body>
+
+</html>

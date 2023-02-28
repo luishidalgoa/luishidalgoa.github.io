@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Portfolio Index</title>
+  <!--Estilos locales-->
+  <link rel="stylesheet" href="/css/style-background.css">
+  <link rel="stylesheet" href="/css/style-footer.css">
+  <link rel="stylesheet" href="/css/generic-style.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <!--Estilos externos-->
+  <script src="https://kit.fontawesome.com/ee94bf2f3c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://use.typekit.net/upo3utk.css">
+</head>
+
+<body class="bg-whiteGray">
+  <div class="container d-flex p-3 ">
+    <div class="rounded-3 bg-light border border-dark w-100"><!--Contenedor de elementos-->
+
+      <header class="d-flex justify-content-between border-bottom p-1 border-dark" id="header">
+        <nav class="p-0 navbar navbar-expand-sm bg-body-tertiary">
+          <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">menu</i>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
+              <a class="nav-link" aria-current="page" href="/index.html">About Me</a>
+              <a class="nav-link" href="Proyects.html">My Proyects</a>
+              <a class="nav-link" href="Education&Certification.html">Education & Certifications</a>
+            </div>
+          </div>
+        </nav>
+        <nav class="p-0 navbar bg-body-tertiary justify-content-end">
+          <i class="material-symbols-outlined p-2 text-nowrap bg-i" id="language" data-bs-toggle="collapse"
+            data-bs-target="#navbarLanguage" aria-controls="navbarLanguage" aria-expanded="false"
+            aria-label="Toggle navigation">language</i>
+          <div class="collapse navbar-collapse text-end p-1" id="navbarLanguage">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">English</a>
+              <a class="nav-link" onclick="cambiarIdioma('es')">Spanish</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="m-0 mt-2 text-center justify-content-center">
+        <p class="fw-bolder vfs-3 ">Education & Certifications</p>
+        <div class="fst-italic tk-study-variable vfs-3 parraf">
+          <p>I am a professional with a solid academic background and some certifications that guarantee my skills and
+            abilities. He completed higher studies in Software Development</p>
+        </div>
+        <p class="fw-bolder vfs-1">Education</p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 container-card p-5">
+          <div class="d-flex flex-wrap position-relative text-center bg-whiteGray h-100 rounded-4 card-container">
+            <div class="icon bg-white position-relative p-4 w-100 mh-100">
+              <img src="/Content/Education/betica-mudarra.png" alt="">
+            </div>
+            <div class="info">
+              <p class="overflow-hidden text-start parraf">Betica-Mudarra: For four years, I had the opportunity to
+                study at the
+                Bética-Mudarra school, an educational center of the Teresian Association that offers a comprehensive and
+                quality education. There I obtained the title of Compulsory Secondary Education (ESO))</p>
+              <div class="d-grid p-2 justify-content-center">
+                <button class="btn btn-primary" type="button"><a href="https://www.betica-mudarra.org/"
+                    class="text-decoration-none text-light">Go</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap position-relative text-center bg-whiteGray h-100 rounded-4 card-container">
+            <div class="icon bg-andalucia position-relative p-4 w-100 mh-100">
+              <img src="/Content/Education/JuntaAndalucia.png" alt="">
+            </div>
+            <div class="info">
+              <p class="overflow-hidden text-start parraf">My academic training was developed at the IES Francisco de
+                los Ríos, where I
+                studied the intermediate degree of Microcomputer Systems and the advanced degree of Multiplatform
+                Application Development. During my stay at this center, I acquired theoretical and practical knowledge
+                about computing, programming, networks and databases.</p>
+              <div class="d-grid p-2 justify-content-center">
+                <button class="btn btn-primary" type="button"><a class="text-light text-decoration-none"
+                    href="https://www.iesfranciscodelosrios.es/">Go</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="fw-bolder vfs-1">certifications</p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 container-card p-5">
+          <div
+            class="d-flex flex-wrap position-relative text-center justify-content-center bg-whiteGray h-100 rounded-4 card-container">
+            <div class="icon position-relative w-100 mh-100 p-2 d-flex justify-content-center align-content-center"
+              style="background: rgb(66,28,131);
+            background: linear-gradient(159deg, rgba(66,28,131,1) 0%, rgba(51,73,145,1) 49%, rgba(0,229,196,1) 100%);">
+              <img src="/Content/Education/Certification_JavaBasic.png" class="h-75 mt-4" alt="">
+            </div>
+            <div class="info">
+              <p class="overflow-hidden "></p>
+              <div class="d-grid p-2 justify-content-center">
+                <button class="btn btn-primary" type="button"><a
+                    href="https://community.open-bootcamp.com/user/luishidalgoa/certificaciones/5859bcb6-ded1-4b59-b816-379a1cbe8b69"
+                    class="text-decoration-none text-light">Go</a></button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap position-relative text-center justify-content-center bg-whiteGray h-100 rounded-4 card-container">
+            <div class="icon position-relative w-100 mh-100 p-2 d-flex justify-content-center align-content-center"
+              style="background: rgb(66,28,131);
+            background: linear-gradient(159deg, rgba(66,28,131,1) 0%, rgba(51,73,145,1) 49%, rgba(0,229,196,1) 100%);">
+              <img src="/Content/Education/Certification_Html&CSS.png" class="h-75 mt-4" alt="">
+            </div>
+            <div class="info">
+              <p class="overflow-hidden "></p>
+              <div class="d-grid p-2 justify-content-center card-btn">
+                <button class="btn btn-primary" type="button"><a
+                    href="https://community.open-bootcamp.com/user/luishidalgoa/certificaciones/dc454ce6-7cc7-4d08-9029-f2552c7e5d53"
+                    class="text-decoration-none text-light">Go</a></button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap position-relative text-center justify-content-center bg-whiteGray h-100 rounded-4 card-container">
+            <div class="icon position-relative w-100 mh-100 p-2 d-flex justify-content-center align-content-center"
+              style="background: rgb(66,28,131);
+            background: linear-gradient(159deg, rgba(66,28,131,1) 0%, rgba(51,73,145,1) 49%, rgba(0,229,196,1) 100%);">
+              <img src="/Content/Education/Certification_SQL.png" class="h-75 mt-4" alt="">
+            </div>
+            <div class="info">
+              <p class="overflow-hidden "></p>
+              <div class="d-grid p-2 justify-content-center">
+                <button class="btn btn-primary" type="button"><a
+                    href="https://community.open-bootcamp.com/user/luishidalgoa/certificaciones/1419721a-eee0-4b3f-81be-916b7b4679e6"
+                    class="text-decoration-none text-light">Go</a></button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap position-relative text-center justify-content-center bg-whiteGray h-100 rounded-4 card-container">
+            <div class="icon position-relative w-100 mh-100 p-2 d-flex justify-content-center align-content-center"
+              style="background: rgb(66,28,131);
+            background: linear-gradient(159deg, rgba(66,28,131,1) 0%, rgba(51,73,145,1) 49%, rgba(0,229,196,1) 100%);">
+              <img src="/Content/Education/Certification_Introduction_Programming.png" class="h-75 mt-4" alt="">
+            </div>
+            <div class="info">
+              <p class="overflow-hidden "></p>
+              <div class="d-grid p-2 justify-content-center">
+                <button class="btn btn-primary" type="button"><a
+                    href="https://community.open-bootcamp.com/user/luishidalgoa/certificaciones/c1e0101f-2d01-45f0-b032-4244c984704d"
+                    class="text-decoration-none text-light">Go</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 d-flex vfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center">
+          <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none"
+            href="https://www.linkedin.com/feed/"></a>
+          <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"></a>
+          <a class="fa-brands fa-instagram text-decoration-none" id="instagram"
+            href="https://www.instagram.com/luishidalgo.esp/"></a>
+          <a class="fa-solid fa-envelope text-primary opacity-75 text-decoration-none"
+            href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"></a>
+        </div>
+    </div>
+    </section>
+
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="/JS/language.js"></script>
+</body>
+
+</html>

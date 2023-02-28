@@ -5,7 +5,12 @@
 .bg-gray {
     background-color: rgb(127, 127, 127);
 }
-
+.bg-andalucia{
+    background-color: rgb(0, 116, 53);
+}
+.bg-sky{
+    background-color: #67afcc;
+}
 .row {
     /*border: 1px solid pink;*/
 }
