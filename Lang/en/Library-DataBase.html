@@ -24,8 +24,8 @@
 
 <body class="bg-whiteGray">
   <div class="scroll-line rounded-4"></div>
-  <div class="container d-flex p-3 p-sm-0 ">
-    <div class="rounded-3 bg-light border border-dark w-100"><!--Contenedor de elementos-->
+  <div class="container-xs d-flex p-3 p-sm-0">
+    <div class="w-100 container-element"><!--Contenedor de elementos-->
       <header class="d-flex justify-content-between border-bottom p-1 border-dark" id="header">
         <nav class="p-0 navbar navbar-expand-sm bg-body-tertiary">
           <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
@@ -33,9 +33,12 @@
             aria-label="Toggle navigation">menu</i>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
-              <a class="nav-link" aria-current="page" href="/index.html">About Me</a>
-              <a class="nav-link" href="/Lang/en/Proyects.html">My Projects</a>
-              <a class="nav-link" href="/Lang/en/Education&Certification.html">Education & Certifications</a>
+              <a class="nav-link d-grid text-center" aria-current="page" href="/index.html"><i
+                  class="fa-solid fa-info"></i>About Me</a>
+              <a class="nav-link d-grid text-center" href="/Lang/en/Projects.html"><i
+                  class="fa-regular fa-folder-open"></i>My Projects</a>
+              <a class="nav-link d-grid text-center" href="/Lang/en/Education&Certification.html"><i
+                  class="fa-solid fa-graduation-cap"></i>Education & Certifications</a>
             </div>
           </div>
         </nav>
@@ -53,75 +56,144 @@
       </header>
       <section class="text-center">
         <div class="row w-100 m-0 justify-content-center mt-5"> <!-- Texto-->
-          <p class="fw-bolder vfs-1">Library-DataBase</p>
+          <p class="fw-bolder rfs-1">Library-DataBase</p>
           <img class=" img-fluid w-50" src="/content/Articles/Library-DataBase/logo.jpeg" alt="">
-          <p class="vfs-4">Link to repository on GitHub</p>
+          <p class="rfs-4">Link to repository on GitHub</p>
           <div class="d-flex justify-content-center">
-            <icon class="fa-brands fa-github vfs-3">
-              <a href="https://github.com/luishidalgoa/Library-DataBase" class="text-dark">LINK</a>
+            <icon class="fa-brands fa-github rfs-3">
+              <a href="https://github.com/luishidalgoa/Library-DataBase" target="_blank" class="text-dark">LINK</a>
           </div>
         </div>
       </section>
-      <div class="p-5 row justify-content-center">
-        <p class="vfs-3 fw-bold">Library Management System</p>
-        <p class="vfs-5 tk-study-variable parraf">This is a Java Lab Project.
-          Would you like to know how to create a library management system that allows you to register and consult the
-          available books and magazines, as well as lend them to users? In this article I am going to tell you how I
-          have developed this project as part of a 1ºDAM internship at IES Francisco de los Ríos. In addition, I will
-          explain what technologies I have used, what difficulties I have encountered and what benefits this experience
-          has brought me.
-        </p>
-        <p class="vfs-3 fw-bold">What is a library management system?</p>
-        <img src="/Content/Articles/Library-DataBase/1.png" class="w-75 mt-3 mb-3" alt="">
-        <p class="vfs-5 tk-study-variable parraf">A library management system is a computer application that facilitates
-          the organization and control of the
-          bibliographic material found in a library. Among its main functions are:
+      <section class="m-0 p-5 w-100 row justify-content-center">
+        <div class="col-md-8">
+          <p class="rfs-3 fw-bold">Library Management System</p>
+          <p class="rfs-5 tk-study-variable">This is a Java Lab Project.
+            Would you like to know how to create a library management system that allows you to register and consult the
+            available books and magazines, as well as lend them to users? In this article I am going to tell you how I
+            have developed this project as part of a 1ºDAM internship at IES Francisco de los Ríos. In addition, I will
+            explain what technologies I have used, what difficulties I have encountered and what benefits this
+            experience
+            has brought me.
+          </p>
+          <p class="rfs-3 fw-bold">What is a library management system?</p>
+          <img src="/Content/Articles/Library-DataBase/1.png" class="w-75 mt-3 mb-3" alt="">
+          <p class="rfs-5 tk-study-variable">A library management system is a computer application that facilitates
+            the organization and control of the
+            bibliographic material found in a library. Among its main functions are:
 
-          - Register the books and magazines that are in the library, with their basic data such as title, author,
-          publisher, year, etc.
-          - Check the availability and status of the items, as well as their location within the library.
-          - Lend and return the items to users, keeping track of the history and deadlines.
-          - Generate reports and statistics on the use and performance of the library.
-        </p>
-        <p class="vfs-3 fw-bold">How did this project come about?</p>
-        <img src="/Content/Articles/Library-DataBase/2.jpg" class="w-75 mt-3 mb-3" alt="">
-        <p class="vfs-5 tk-study-variable parraf mb-5">This project arose as a proposal from the Programming teacher of the
-          first year of the intermediate training
-          cycle of Multiplatform Application Development (DAM) at the IES Francisco de los Ríos. The objective was to
-          put into practice the knowledge acquired during the first term on object-oriented programming, data structures
-          and algorithms.
-        </p>
-        <p class="vfs-5 tk-study-variable parraf">The professor gave us some general guidelines on the functionalities
-          that the system should have, but he left
-          us free to design and implement our own solution. He also encouraged us to investigate and learn about other
-          more advanced technologies that could improve our project.
-        </p>
-        <p class="vfs-3 fw-bold">What technologies have I used?</p>
-        <img src="/Content/Articles/Library-DataBase/3.jpg" class="w-75 mt-3 mb-3"" alt="">
-        <p class="vfs-5 tk-study-variable parraf mb-5">To develop this project I have used entirely the Java language, since
+          <ul class="rfs-5 tk-study-variable parraf">
+            <li> Register the books and magazines that are in the library, with their basic data such as title, author,
+              publisher, year, etc.
+            </li>
+            <li>
+              Check the availability and status of the items, as well as their location within the library.
+            </li>
+            <li>
+              Lend and return the items to users, keeping track of the history and deadlines.
+            </li>
+            <li>
+              Generate reports and statistics on the use and performance of the library.
+            </li>
+          </ul>
+          </p>
+          <p class="rfs-3 fw-bold">How did this project come about?</p>
+          <img src="/Content/Articles/Library-DataBase/2.jpg" class="w-75 mt-3 mb-3" alt="">
+          <p class="rfs-5 tk-study-variable  mb-5">This project arose as a proposal from the Programming teacher of the
+            first year of the intermediate training
+            cycle of Multiplatform Application Development (DAM) at the IES Francisco de los Ríos. The objective was to
+            put into practice the knowledge acquired during the first term on object-oriented programming, data
+            structures
+            and algorithms.
+          </p>
+          <p class="rfs-5 tk-study-variable ">The professor gave us some general guidelines on the functionalities
+            that the system should have, but he left
+            us free to design and implement our own solution. He also encouraged us to investigate and learn about other
+            more advanced technologies that could improve our project.
+          </p>
+          <p class="rfs-3 fw-bold">What technologies have I used?</p>
+          <img src="/Content/Articles/Library-DataBase/3.jpg" class="w-75 mt-3 mb-3"" alt="">
+        <p class=" rfs-5 tk-study-variable mb-5">To develop this project I have used entirely the Java language, since
           it is the one we have studied in class and with which I feel most comfortable. In addition, Java is a very
           versatile and powerful language, which allows you to create cross-platform applications with a wide variety of
           available libraries.</p>
-        <p class="vfs-5 tk-study-variable parraf mb-5">As a graphical interface I have used the command console, since I
-          still had to learn about other more advanced technologies. The console has allowed me to create a simple but
-          functional menu to interact with the user.</p>
-        <p class="vfs-5 tk-study-variable parraf mb-5">To store the system data I have used a serialization system, thus
-          allowing to share and transfer data between different systems or platforms efficiently. By converting the data
-          into a standardized format, it is easier for different programs and systems to read and use the information
-          without worrying about differences in the structure or format of the data.</p>
-        <p class="vfs-5 tk-study-variable parraf mb-5">To organize the code I have used the object-oriented programming
-          paradigm (OOP), creating classes to represent the entities of the system (book, magazine, issue, user) and
-          their relationships (inheritance, composition). I have also applied some basic principles like</p>
-      </div>
-      <div class="w-100 d-flex vfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center">
-        <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none"
-          href="https://www.linkedin.com/feed/"></a>
-        <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"></a>
+          <p class="rfs-5 tk-study-variable  mb-5">As a graphical interface I have used the command console, since I
+            still had to learn about other more advanced technologies. The console has allowed me to create a simple but
+            functional menu to interact with the user.</p>
+          <p class="rfs-5 tk-study-variable  mb-5">To store the system data I have used a serialization system, thus
+            allowing to share and transfer data between different systems or platforms efficiently. By converting the
+            data
+            into a standardized format, it is easier for different programs and systems to read and use the information
+            without worrying about differences in the structure or format of the data.</p>
+          <p class="rfs-5 tk-study-variable  mb-5">To organize the code I have used the object-oriented programming
+            paradigm (OOP), creating classes to represent the entities of the system (book, magazine, issue, user) and
+            their relationships (inheritance, composition). I have also applied some basic principles like</p>
+        </div>
+      </section>
+      <div class="w-100 d-flex rfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center d-md-none">
+        <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none " href="https://www.linkedin.com/feed/"
+          target="_blank"></a>
+        <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"
+          target="_blank"></a>
         <a class="fa-brands fa-instagram text-decoration-none" id="instagram"
-          href="https://www.instagram.com/luishidalgo.esp/"></a>
+          href="https://www.instagram.com/luishidalgo.esp/" target="_blank"></a>
         <a class="fa-solid fa-envelope text-primary opacity-75 text-decoration-none"
-          href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"></a>
+          href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo" target="_blank"></a>
       </div>
+      <footer class="text-center text-lg-start bg-white text-muted d-none d-md-block">
+        <section class="d-flex justify-content-end p-4 border-bottom">
+          <div>
+            <a href="https://www.instagram.com/luishidalgo.esp/" class="me-4 link-secondary" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" class="me-4 link-secondary" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/luishidalgoa" class="me-4 link-secondary" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-  4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3 text-secondary"></i>Portfolio
+                </h6>
+                <a href="/Lang/en/legal-warning.html" target="_blank">Legal warning</a>
+              </div>
+              <div class="col-md-2 mx-auto mb-4 ">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  References
+                </h6>
+                <p>
+                  <a href="https://fontawesome.com/" target="_blank" class="text-reset no-wrap">FontAwesome</a>
+                </p>
+                <p>
+                  <a href="https://getbootstrap.com/" target="_blank" class="text-reset no-wrap">BootStrap</a>
+                </p>
+                <p>
+                  <a href="https://mdbootstrap.com/" target="_blank" class="text-reset no-wrap">MDB</a>
+                </p>
+                <p>
+                  <a href="https://undraw.co/illustrations" target="_blank" class="text-reset no-wrap">Undraw</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> Córdoba, Spain</p>
+                <a href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"
+                  class="text-decoration-none">
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  Luishidalgoa@outlook.es
+                </a>
+                <p class="mt-3"><i class="fas fa-phone me-3 text-secondary"></i> +34 680 26 43 23</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -130,7 +202,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-    <script src="/JS/language.js"></script>
+  <script src="/JS/language.js"></script>
 </body>
 
 </html>

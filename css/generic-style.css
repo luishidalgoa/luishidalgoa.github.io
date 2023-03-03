@@ -19,6 +19,15 @@
     transition-duration: 0.25s;
 }
 
+.rw-1 {
+    width: 20em !important;
+}
+
+.rw-3 {
+    width: 10em !important;
+}
+
+
 .bg-i:hover {
     background-color: rgb(211, 211, 211, 0.5);
     scale: 1.05;
@@ -55,34 +64,61 @@
     position: fixed;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 0.5);
 }
-ul li::before{
+
+ul li::before {
     content: '-';
 }
 
 /*-----------CARDS--------*/
-.card-container{
+.card-container {
     max-width: 250px;
     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 
 }
-.icon{
+
+.icon {
     border-radius: 10px 10px 10px 10px;
     height: 220px;
-    transition:all 600ms cubic-bezier(0.72, 0.82, 0.165, 1);
+    transition: all 600ms cubic-bezier(0.72, 0.82, 0.165, 1);
 }
-.info p{
+
+.info p {
     margin-top: -220px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
-    transition:all 600ms cubic-bezier(0.72, 0.82, 0.165, 1);
+    transition: all 600ms cubic-bezier(0.72, 0.82, 0.165, 1);
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
-.card-container:hover .icon{
+
+.card-container:hover .icon {
     margin-top: -20px;
     border-radius: 10px 10px 0px 0px;
 }
-.card-container:hover .info p{
+
+.card-container:hover .info p {
     opacity: 100%;
     margin-top: 0px;
 }
+
+.animated {
+    position: relative !important;
+    animation: shake 3s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+  

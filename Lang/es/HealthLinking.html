@@ -24,90 +24,158 @@
 
 <body class="bg-whiteGray">
     <div class="scroll-line rounded-4"></div>
-    <div class="container d-flex p-3 p-sm-0 ">
-        <div class="rounded-3 bg-light border border-dark w-100"><!--Contenedor de elementos-->
+    <div class="container-xs d-flex p-3 p-sm-0">
+        <div class="w-100 container-element"><!--Contenedor de elementos-->
             <header class="d-flex justify-content-between border-bottom p-1 border-dark" id="header">
                 <nav class="p-0 navbar navbar-expand-sm bg-body-tertiary">
-                  <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">menu</i>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
-                      <a class="nav-link" aria-current="page" href="index.html">Sobre mí</a>
-                      <a class="nav-link" href="Proyects.html">Mis proyectos</a>
-                      <a class="nav-link" href="Education&Certification.html">Educacion y certificaciones</a>
+                    <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">menu</i>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
+                            <a class="nav-link d-grid text-center" aria-current="page" href="/Lang/es/index.html"><i
+                                    class="fa-solid fa-info"></i>Sobre mí</a>
+                            <a class="nav-link d-grid text-center" href="/Lang/es/Projects.html"><i
+                                    class="fa-regular fa-folder-open"></i>Mis proyectos</a>
+                            <a class="nav-link d-grid text-center" href="/Lang/es/Education&Certification.html"><i
+                                    class="fa-solid fa-graduation-cap"></i>Educación y certificaciones</a>
+                        </div>
                     </div>
-                  </div>
                 </nav>
                 <nav class="p-0 navbar bg-body-tertiary justify-content-end">
-                  <i class="material-symbols-outlined p-2 text-nowrap bg-i" id="language" data-bs-toggle="collapse"
-                    data-bs-target="#navbarLanguage" aria-controls="navbarLanguage" aria-expanded="false"
-                    aria-label="Toggle navigation">language</i>
-                  <div class="collapse navbar-collapse text-end p-1" id="navbarLanguage">
-                    <div class="navbar-nav">
-                      <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">English</a>
-                      <a class="nav-link" onclick="cambiarIdioma('es')">Spanish</a>
+                    <i class="material-symbols-outlined p-2 text-nowrap bg-i" id="language" data-bs-toggle="collapse"
+                        data-bs-target="#navbarLanguage" aria-controls="navbarLanguage" aria-expanded="false"
+                        aria-label="Toggle navigation">language</i>
+                    <div class="collapse navbar-collapse text-end p-1" id="navbarLanguage">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">Ingles</a>
+                            <a class="nav-link" onclick="cambiarIdioma('es')">Español</a>
+                        </div>
                     </div>
-                  </div>
                 </nav>
-              </header>
+            </header>
             <section class="text-center">
                 <div class="row w-100 m-0 justify-content-center mt-5"> <!-- Texto-->
-                    <p class="fw-bolder vfs-1">HealthLinking</p>
-                    <img class=" img-fluid w-75 pb-4" src="/content/Articles/HealthLinking/logo.jpeg" alt="">
-                    <p class="vfs-4">Link al repositorio en GitHub</p>
+                    <p class="fw-bolder rfs-3">HealthLinking</p>
+                    <img class=" img-fluid w-50 pb-4" src="/content/Articles/HealthLinking/logo.jpg" alt="">
+                    <p class="rfs-4">Link to repository on GitHub</p>
                     <div class="d-flex justify-content-center">
-                        <icon class="fa-brands fa-github vfs-3">
-                            <a href="https://github.com/luishidalgoa/Library-DataBase" class="text-dark">LINK</a>
+                        <icon class="fa-brands fa-github rfs-3">
+                            <a href="https://github.com/luishidalgoa/HealthLinking" target="_blank"
+                                class="text-dark">LINK</a>
                     </div>
                 </div>
             </section>
-            <div class="p-5 row justify-content-center">
-                <p class="vfs-3 fw-bold">HealthLink</p>
-                <p class="vfs-5 tk-study-variable parraf">
-                    HealthLinking es un software para la gestión de datos médicos que surge como iniciativa de un
-                     proyecto al final del 1er trimestre de DAM. El objetivo del proyecto era llevar a cabo nuestra
-                     primer programa OOP.
-                </p>
-                <p class="vfs-5 tk-study-variable parraf">Los profesionales médicos que trabajan en los centros de salud se enfrentan al día a día
-                    reto de gestionar los datos personales y médicos de los pacientes que atienden. Este dato es
-                    esencial para brindar atención médica de calidad, pero también plantea una responsabilidad y un desafío en
-                    términos de su almacenamiento, protección y acceso.
-                </p>
-                <p class="vfs-5 tk-study-variable parraf">Para facilitar esta tarea, he creado 'HealthLink', un
-                    software destinado a profesionales médicos en centros de salud. Su finalidad es registrar los datos personales.
-                    y datos médicos de los pacientes y acceder a esos datos médicos cuando sea necesario, simplemente ingresando
-                    el número de identificación del paciente. De esta forma, habrá un control médico de los pacientes como
-                    así como una base de datos que también es capaz de almacenar la fecha y hora de todas las citas realizadas en
-                    una consulta</p>
-                <p class="vfs-3 fw-bold">¿Cómo funciona Health Link?</p>
-                <p class="vfs-5 tk-study-variable parraf">HealthLink es un software fácil e intuitivo que se adapta a
-                    las necesidades básicas de los centros de salud. Su funcionamiento se basa en los siguientes pasos:
-                </p>
-                <ul class="vfs-5 tk-study-variable parraf">
-                    <li><b>Registro : </b>El profesional médico ingresa los datos personales y médicos del paciente
-                        en el sistema a través de una interfaz simple y segura. Estos datos están asociados a la
-                        número de identificación del paciente, que puede ser su DNI.
-                    </li>
-                    <li><b>Acceso : </b>El profesional médico accede a los datos médicos del paciente introduciendo su
-                        número de identificación en el sistema. De esta forma podrás ver toda la información relevante sobre
-                        la historia clínica del paciente así como las citas realizadas o pendientes en su consulta.
-                    </li>
-                    <li><b>Update: </b>El profesional médico puede modificar o agregar nuevos datos sobre el paciente cada vez
-                        ella lo atiende o realiza una prueba o intervención. Estos cambios se reflejan automáticamente en
-                        la base de datos para mantenerla actualizada</li>
-                </ul>
+            <div class="p-5 row w-100 justify-content-center">
+                <div class="col-md-8">
+                    <p class="rfs-3 fw-bold">HealthLink</p>
+                    <p class="rfs-5 tk-study-variable parraf">
+                        HealthLinking is a software for the management of medical data that arose as an initiative of a
+                        project at the end of the 1st quarter of DAM. The objective of the project was to carry out our
+                        first OOP program.
+                    </p>
+                    <p class="rfs-5 tk-study-variable parraf">Medical professionals working in health centers face the
+                        daily
+                        challenge of managing the personal and medical data of the patients they care for. This data is
+                        essential to delivering quality healthcare, but it also poses a responsibility and a challenge
+                        in
+                        terms of its storage, protection and access.
+                    </p>
+                    <p class="rfs-5 tk-study-variable parraf">To facilitate this task, I have created 'HealthLink', a
+                        software intended for medical professionals in health centers. Its purpose is to record the
+                        personal
+                        and medical data of patients and to access that medical data whenever necessary, simply by
+                        entering
+                        the patient's identification number. In this way, there will be a medical control of the
+                        patients as
+                        well as a database that is also capable of storing the date and time of all the appointments
+                        made in
+                        a consultation.</p>
+                    <p class="rfs-3 fw-bold">How does HealthLink work?</p>
+                    <p class="rfs-5 tk-study-variable parraf">HealthLink is an easy and intuitive software that adapts
+                        to
+                        the basic needs of health centers. Its operation is based on the following steps:
+                    </p>
+                    <ul class="rfs-5 tk-study-variable parraf">
+                        <li><b>Registration : </b>The medical professional enters the patient's personal and medical
+                            data
+                            into the system through a simple and secure interface. These data are associated with the
+                            patient's identification number, which can be their ID.
+                        </li>
+                        <li><b>Access : </b>The medical professional accesses the patient's medical data by entering her
+                            identification number in the system. In this way you can see all the relevant information
+                            about
+                            the patient's clinical history as well as the appointments made or pending in your practice.
+                        </li>
+                        <li><b>Update : </b>The medical professional can modify or add new data about the patient each
+                            time
+                            she attends him or performs a test or intervention. These changes are automatically
+                            reflected in
+                            the database to keep it up to date</li>
+                    </ul>
+                </div>
             </div>
-            <div class="w-100 d-flex vfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center">
-                <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none"
-                    href="https://www.linkedin.com/feed/"></a>
-                <a class="fa-brands fa-github text-light text-decoration-none"
-                    href="https://github.com/luishidalgoa"></a>
+            <div class="w-100 d-flex rfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center d-md-none">
+                <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none "
+                    href="https://www.linkedin.com/feed/" target="_blank"></a>
+                <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"
+                    target="_blank"></a>
                 <a class="fa-brands fa-instagram text-decoration-none" id="instagram"
-                    href="https://www.instagram.com/luishidalgo.esp/"></a>
+                    href="https://www.instagram.com/luishidalgo.esp/" target="_blank"></a>
                 <a class="fa-solid fa-envelope text-primary opacity-75 text-decoration-none"
-                    href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"></a>
+                    href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"
+                    target="_blank"></a>
             </div>
+            <footer class="text-center text-lg-start bg-white text-muted d-none d-md-block">
+                <section class="d-flex justify-content-end p-4 border-bottom">
+                  <div>
+                    <a href="https://www.instagram.com/luishidalgo.esp/" class="me-4 link-secondary" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/feed/" class="me-4 link-secondary" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/luishidalgoa" class="me-4 link-secondary" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </section>
+                <section class="">
+                  <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                      <div class="col-md-3 col-lg-  4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3 text-secondary"></i>Portfolio
+                        </h6>
+                        <a href="/Lang/en/legal-warning.html" target="_blank">Aviso legal</a>
+                      </div>
+                      <div class="col-md-2 mx-auto mb-4 ">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          Referencias
+                        </h6>
+                        <p>
+                          <a href="https://fontawesome.com/" target="_blank" class="text-reset no-wrap">FontAwesome</a>
+                        </p>
+                        <p>
+                          <a href="https://getbootstrap.com/" target="_blank" class="text-reset no-wrap">BootStrap</a>
+                        </p>
+                        <p>
+                          <a href="https://mdbootstrap.com/" target="_blank" class="text-reset no-wrap">MDB</a>
+                        </p>
+                      </div>
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contactame</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> Córdoba, España</p>
+                        <a href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo" class="text-decoration-none">
+                          <i class="fas fa-envelope me-3 text-secondary"></i>
+                          Luishidalgoa@outlook.es
+                        </a>
+                        <p class="mt-3"><i class="fas fa-phone me-3 text-secondary"></i> +34 680 26 43 23</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

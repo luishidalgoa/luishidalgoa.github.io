@@ -15,50 +15,24 @@ p {
     word-wrap: break-word;
 }
 
-.vfs-1 {
-    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-    font-size: 10vw!important;
+.rfs-1{
+    font-size: 5em!important;
 }
-.vfs-3 {
-    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-    font-size: 5vw!important;
+.rfs-2{
+    font-size: 4em;
 }
-.vfs-4 {
-    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-    font-size: 4vw!important;
+.rfs-3 {
+    font-size: 3em!important;
+}
+.rfs-4 {
+    font-size: 2em!important;
 }
 
-.vfs-5 {
-    /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-    font-size: 3vw !important;
+.rfs-5 {
+    font-size: 1em!important;
 }
 
 .no-wrap {
-    max-width: 100%;
-    /* Limita la anchura del texto al ancho del contenedor */
-    white-space: nowrap;
+    white-space: nowrap!important;
     /* Evita que el texto salte de línea */
-}
-
-.parraf {
-    padding-left: 10% !important;
-    padding-right: 10% !important;
-}
-@media (min-width:576px) {
-    .vfs-1{
-        font-size: 6vw!important;
-    }
-    .vfs-3 {
-        /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-        font-size: 4vw!important;
-    }
-    .vfs-4 {
-        /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-        font-size: 3vw!important;
-    }
-    
-    .vfs-5 {
-        /* Esta etiqueta + text-nowraper permite hacer texto responsivo*/
-        font-size: 2vw!important;
-    }
 }

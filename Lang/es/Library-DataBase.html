@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -24,8 +24,8 @@
 
 <body class="bg-whiteGray">
   <div class="scroll-line rounded-4"></div>
-  <div class="container d-flex p-3 p-sm-0 ">
-    <div class="rounded-3 bg-light border border-dark w-100"><!--Contenedor de elementos-->
+  <div class="container-xs d-flex p-3 p-sm-0">
+    <div class="w-100 container-element"><!--Contenedor de elementos-->
       <header class="d-flex justify-content-between border-bottom p-1 border-dark" id="header">
         <nav class="p-0 navbar navbar-expand-sm bg-body-tertiary">
           <i class="p-2 material-symbols-outlined bg-i" id="bars" data-bs-toggle="collapse"
@@ -33,9 +33,12 @@
             aria-label="Toggle navigation">menu</i>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav fw-bold m-sm-5 mt-sm-0 mb-sm-0 ">
-              <a class="nav-link" aria-current="page" href="index.html">Sobre mí</a>
-              <a class="nav-link" href="Proyects.html">Mis proyectos</a>
-              <a class="nav-link" href="Education&Certification.html">Educacion y certificaciones</a>
+              <a class="nav-link d-grid text-center" aria-current="page" href="/Lang/es/index.html"><i
+                  class="fa-solid fa-info"></i>Sobre mí</a>
+              <a class="nav-link d-grid text-center" href="/Lang/es/Projects.html"><i
+                  class="fa-regular fa-folder-open"></i>Mis proyectos</a>
+              <a class="nav-link d-grid text-center" href="/Lang/es/Education&Certification.html"><i
+                  class="fa-solid fa-graduation-cap"></i>Educación y certificaciones</a>
             </div>
           </div>
         </nav>
@@ -45,90 +48,157 @@
             aria-label="Toggle navigation">language</i>
           <div class="collapse navbar-collapse text-end p-1" id="navbarLanguage">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">English</a>
-              <a class="nav-link" onclick="cambiarIdioma('es')">Spanish</a>
+              <a class="nav-link" aria-current="page" onclick="cambiarIdioma('en')">Ingles</a>
+              <a class="nav-link" onclick="cambiarIdioma('es')">Español</a>
             </div>
           </div>
         </nav>
       </header>
       <section class="text-center">
         <div class="row w-100 m-0 justify-content-center mt-5"> <!-- Texto-->
-          <p class="fw-bolder vfs-1">Library-DataBase</p>
+          <p class="fw-bolder rfs-1">Library-DataBase</p>
           <img class=" img-fluid w-50" src="/content/Articles/Library-DataBase/logo.jpeg" alt="">
-          <p class="vfs-4">Link al repositorio en GitHub</p>
+          <p class="rfs-4">Enlace al repositorio en GitHub</p>
           <div class="d-flex justify-content-center">
-            <icon class="fa-brands fa-github vfs-3">
-              <a href="https://github.com/luishidalgoa/Library-DataBase" class="text-dark">LINK</a>
+            <icon class="fa-brands fa-github rfs-3">
+              <a href="https://github.com/luishidalgoa/Library-DataBase" target="_blank" class="text-dark">LINK</a>
           </div>
         </div>
       </section>
-      <div class="p-5 row justify-content-center">
-        <p class="vfs-3 fw-bold">Sistema de gestión de bibliotecas</p>
-        <p class="vfs-5 tk-study-variable parraf">Este es un proyecto de laboratorio de Java.
-          ¿Te gustaría saber cómo crear un sistema de gestión de bibliotecas que te permita registrarte y consultar el
-          libros y revistas disponibles, así como prestarlos a los usuarios? En este artículo te voy a contar cómo
-          han desarrollado este proyecto como parte de unas prácticas de 1ºDAM en el IES Francisco de los Ríos. Además,
-          lo haré
-          explicar qué tecnologías he utilizado, qué dificultades he encontrado y qué beneficios tiene esta experiencia
-          me ha traído.
-        </p>
-        <p class="vfs-3 fw-bold">¿Qué es un sistema de gestión de bibliotecas?</p>
-        <img src="/Content/Articles/Library-DataBase/1.png" class="w-75 mt-3 mb-3" alt="">
-        <p class="vfs-5 tk-study-variable parraf">Un sistema de gestión de bibliotecas es una aplicación informática que
-          facilita
-          la organización y el control de la
-          Material bibliográfico encontrado en una biblioteca. Entre sus principales funciones se encuentran:
+      <section class="m-0 p-5 w-100 row justify-content-center">
+        <div class="col-md-8">
+          <p class="rfs-3 fw-bold">Sistema de gestión de bibliotecas</p>
+          <p class="rfs-5 tk-study-variable">Este es un proyecto de laboratorio de Java.
+            ¿Te gustaría saber cómo crear un sistema de gestión de bibliotecas que te permita registrarte y consultar el
+            libros y revistas disponibles, así como prestarlos a los usuarios? En este artículo te voy a contar cómo
+            han desarrollado este proyecto como parte de unas prácticas de 1ºDAM en el IES Francisco de los Ríos.
+            Además, lo haré
+            explicar qué tecnologías he utilizado, qué dificultades he encontrado y qué beneficios tiene esta
+            experiencia
+            me ha traído.
+          </p>
+          <p class="rfs-3 fw-bold">¿Qué es un sistema de gestión de bibliotecas?</p>
+          <img src="/Content/Articles/Library-DataBase/1.png" class="w-75 mt-3 mb-3" alt="">
+          <p class="rfs-5 tk-study-variable">Un sistema de gestión de bibliotecas es una aplicación informática que
+            facilita
+            la organización y el control de la
+            Material bibliográfico encontrado en una biblioteca. Entre sus principales funciones se encuentran:
 
-          - Registrar los libros y revistas que se encuentran en la biblioteca, con sus datos básicos como título,
-          autor,
-          editorial, año, etc.
-          - Consultar la disponibilidad y estado de los artículos, así como su ubicación dentro de la biblioteca.
-          - Prestar y devolver los artículos a los usuarios, controlando el historial y los plazos.
-          - Generar informes y estadísticas sobre el uso y rendimiento de la biblioteca.
-        </p>
-        <p class="vfs-3 fw-bold">Como surgió este proyecto?</p>
-        <img src="/Content/Articles/Library-DataBase/2.jpg" class="w-75 mt-3 mb-3" alt="">
-        <p class="vfs-5 tk-study-variable parraf mb-5">Este proyecto surgió como una propuesta de la profesora de
-          Programación de
-          el
-          primer año de la formación intermedia
-          ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) en el IES Francisco de los Ríos. El objetivo era
-          poner en práctica los conocimientos adquiridos durante el primer cuatrimestre sobre programación orientada a
-          objetos, estructuras de datos
-          y algoritmos.
-        </p>
-        <p class="vfs-5 tk-study-variable parraf">El profesor nos dio unas pautas generales sobre las funcionalidades
-          que debe tener el sistema, pero se fue
-          libertad para diseñar e implementar nuestra propia solución. También nos animó a investigar y conocer otros
-          tecnologías más avanzadas que podrían mejorar nuestro proyecto.
-        </p>
-        <p class="vfs-3 fw-bold">¿Qué tecnologías he utilizado?</p>
-        <img src="/Content/Articles/Library-DataBase/3.jpg" class="w-75 mt-3 mb-3" alt="">
-        <p class=" vfs-5 tk-study-variable parraf mb-5">Para desarrollar este proyecto he utilizado íntegramente el lenguaje Java,
-          desde
+          <ul class="rfs-5 tk-study-variable parraf">
+            <li> Registrar los libros y revistas que se encuentran en la biblioteca, con sus datos básicos como título,
+              autor,
+              editorial, año, etc.
+            </li>
+            <li>
+              Consultar la disponibilidad y estado de los artículos, así como su ubicación dentro de la biblioteca.
+            </li>
+            <li>
+              Prestar y devolver los artículos a los usuarios, controlando el historial y los plazos.
+            </li>
+            <li>
+              Generar informes y estadísticas sobre el uso y rendimiento de la biblioteca.
+            </li>
+          </ul>
+          </p>
+          <p class="rfs-3 fw-bold">Como surgió este proyecto?</p>
+          <img src="/Content/Articles/Library-DataBase/2.jpg" class="w-75 mt-3 mb-3" alt="">
+          <p class="rfs-5 tk-study-variable  mb-5">Este proyecto surgió como una propuesta de la profesora de
+            Programación de la
+            primer año de la formación intermedia
+            ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) en el IES Francisco de los Ríos. El objetivo era
+            poner en práctica los conocimientos adquiridos durante el primer cuatrimestre sobre programación orientada a
+            objetos, estructuras de datos
+            y algoritmos.
+          </p>
+          <p class="rfs-5 tk-study-variable ">El profesor nos dio unas pautas generales sobre las funcionalidades
+            que debe tener el sistema, pero se fue
+            libertad para diseñar e implementar nuestra propia solución. También nos animó a investigar y conocer otros
+            tecnologías más avanzadas que podrían mejorar nuestro proyecto.
+          </p>
+          <p class="rfs-3 fw-bold">¿Qué tecnologías he utilizado?</p>
+          <img src="/Content/Articles/Library-DataBase/3.jpg" class="w-75 mt-3 mb-3"" alt="">
+        <p class=" rfs-5 tk-study-variable mb-5">Para desarrollar este proyecto he utilizado íntegramente el lenguaje
+          Java, ya que
           es el que hemos estudiado en clase y con el que me siento más cómodo. Además, Java es muy
           Lenguaje versátil y potente, que permite crear aplicaciones multiplataforma con una gran variedad de
           bibliotecas disponibles.</p>
-        <p class="vfs-5 tk-study-variable parraf mb-5">Como interfaz gráfica he utilizado la consola de comandos, ya que
-          Todavía tenía que aprender sobre otras tecnologías más avanzadas. La consola me ha permitido crear un simple pero
-          menú funcional para interactuar con el usuario.</p>
-        <p class="vfs-5 tk-study-variable parraf mb-5">Para almacenar los datos del sistema he utilizado un sistema de serialización, así
-          permitiendo compartir y transferir datos entre diferentes sistemas o plataformas de manera eficiente. Al convertir los datos
-          en un formato estandarizado, es más fácil para diferentes programas y sistemas leer y usar la información
-          sin preocuparse por diferencias en la estructura o formato de los datos.</p>
-        <p class="vfs-5 tk-study-variable parraf mb-5">Para organizar el código he utilizado la programación orientada a objetos
-          paradigma (OOP), creando clases para representar las entidades del sistema (libro, revista, edición, usuario) y
-          sus relaciones (herencia, composición). También he aplicado algunos principios básicos como</p>
-      </div>
-      <div class="w-100 d-flex vfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center">
-        <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none"
-          href="https://www.linkedin.com/feed/"></a>
-        <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"></a>
+          <p class="rfs-5 tk-study-variable  mb-5">Como interfaz gráfica he utilizado la consola de comandos, ya que
+            Todavía tenía que aprender sobre otras tecnologías más avanzadas. La consola me ha permitido crear un simple
+            pero
+            menú funcional para interactuar con el usuario.</p>
+          <p class="rfs-5 tk-study-variable  mb-5">Para almacenar los datos del sistema he utilizado un sistema de
+            serialización, así
+            permitiendo compartir y transferir datos entre diferentes sistemas o plataformas de manera eficiente. Al
+            convertir los datos
+            en un formato estandarizado, es más fácil para diferentes programas y sistemas leer y usar la información
+            sin preocuparse por diferencias en la estructura o formato de los datos.</p>
+          <p class="rfs-5 tk-study-variable  mb-5">Para organizar el código he utilizado la programación orientada a
+            objetos
+            paradigma (OOP), creando clases para representar las entidades del sistema (libro, revista, número, usuario)
+            y
+            sus relaciones (herencia, composición). También he aplicado algunos principios básicos como</p>
+        </div>
+      </section>
+      <div class="w-100 d-flex rfs-4 gap-4 p-2 bg-gray fborder  text-center justify-content-center d-md-none">
+        <a class="fa-brands fa-linkedin-in text-linkedink text-decoration-none " href="https://www.linkedin.com/feed/"
+          target="_blank"></a>
+        <a class="fa-brands fa-github text-light text-decoration-none" href="https://github.com/luishidalgoa"
+          target="_blank"></a>
         <a class="fa-brands fa-instagram text-decoration-none" id="instagram"
-          href="https://www.instagram.com/luishidalgo.esp/"></a>
+          href="https://www.instagram.com/luishidalgo.esp/" target="_blank"></a>
         <a class="fa-solid fa-envelope text-primary opacity-75 text-decoration-none"
-          href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo"></a>
+          href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo" target="_blank"></a>
       </div>
+      <footer class="text-center text-lg-start bg-white text-muted d-none d-md-block">
+        <section class="d-flex justify-content-end p-4 border-bottom">
+          <div>
+            <a href="https://www.instagram.com/luishidalgo.esp/" class="me-4 link-secondary" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" class="me-4 link-secondary" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/luishidalgoa" class="me-4 link-secondary" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-  4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3 text-secondary"></i>Portfolio
+                </h6>
+                <a href="/Lang/en/legal-warning.html" target="_blank">Aviso legal</a>
+              </div>
+              <div class="col-md-2 mx-auto mb-4 ">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Referencias
+                </h6>
+                <p>
+                  <a href="https://fontawesome.com/" target="_blank" class="text-reset no-wrap">FontAwesome</a>
+                </p>
+                <p>
+                  <a href="https://getbootstrap.com/" target="_blank" class="text-reset no-wrap">BootStrap</a>
+                </p>
+                <p>
+                  <a href="https://mdbootstrap.com/" target="_blank" class="text-reset no-wrap">MDB</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contactame</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> Córdoba, España</p>
+                <a href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del correo" class="text-decoration-none">
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  Luishidalgoa@outlook.es
+                </a>
+                <p class="mt-3"><i class="fas fa-phone me-3 text-secondary"></i> +34 680 26 43 23</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
