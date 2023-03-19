@@ -2,8 +2,6 @@
     width: 500px !important;
 }
 .container-element{
-    border-radius: 8px;
-    border: 1px solid black;
     background-color: white;
 }
 .active{

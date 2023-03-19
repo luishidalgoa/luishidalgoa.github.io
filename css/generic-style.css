@@ -13,7 +13,23 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+#perfil {
+    width: 18em;
+    height: 18em;
+    border-radius: 50%; /* Hace que el divisor sea una esfera */
+  }
+#perfil img {
+    width: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el divisor sin distorsionar la imagen */
+    transition: transform 0.3s ease-out, filter 0.3s ease-out;
+  }
+.img-zoom{
+    transition: transform 0.3s ease-out, filter 0.3s ease-out;
+}
+.img-zoom:hover {
+    filter: blur(0.2px) brightness(0.9) contrast(1.1);
+    transform: scale(1.06); /* Escala la imagen al 120% de su tamaño original */
+  }
 .bg-i {
     transition-duration: 0.25s;
 }
@@ -103,7 +119,6 @@ ul li::before {
 .animated {
     position: relative !important;
     animation: shake 3s ease-in-out infinite;
-    position: relative;
 }
 
 @keyframes shake {
@@ -119,7 +134,23 @@ ul li::before {
         transform: translateY(0);
     }
 }
+.arm{
+    position: relative !important;
+    animation: arm 3s ease-in-out infinite;
+}
+@keyframes arm {
+    0% {
+        transform: translateY(0);
+    }
 
+    50% {
+        transform: translateY(10px) rotate(-1deg) translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 /*MODO NOCHE*/
 .dark-mode{
     height: 25px;
