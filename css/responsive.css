@@ -1,5 +1,5 @@
 .container-xs {
-    width: 500px !important;
+    width: 300px !important;
 }
 .container-element{
     background-color: white;
@@ -9,7 +9,7 @@
     border-radius: 5px;
 }
 nav div a i{display: none!important;}
-@media (min-width: 500px) {
+@media (min-width: 300px) {
     .container-xs {
         width: 100% !important;
     }
