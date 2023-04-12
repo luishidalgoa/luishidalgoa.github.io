@@ -1,14 +1,33 @@
 .container-xs {
     width: 300px !important;
 }
-.container-element{
+
+.container-element {
     background-color: white;
 }
-.active{
+section p{
+    animation: transition 1s ease-out !important;
+}
+@keyframes transition {
+    0%{
+        opacity: 40%;
+        transform: translateY(-40%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+.active {
     background-color: #f3f2ef;
     border-radius: 5px;
 }
-nav div a i{display: none!important;}
+
+nav div a i {
+    display: none !important;
+}
+
 @media (min-width: 300px) {
     .container-xs {
         width: 100% !important;
@@ -20,25 +39,32 @@ nav div a i{display: none!important;}
 }
 
 @media(min-width: 576px) {
-    .container-xs{
+    .container-xs {
         background-color: white;
     }
-    .active{
+
+    .active {
         background-color: #f3f2ef;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
-    .container-element{
+
+    .container-element {
         border: none;
         background-color: transparent;
     }
+
     #header {
         border-bottom: none !important;
     }
-    nav div a i{display: block!important;}
+
+    nav div a i {
+        display: block !important;
+    }
+
     #bars {
         display: none;
     }
 }
-@media(min-width: 992px){
-}
+
+@media(min-width: 992px) {}
