@@ -9,13 +9,13 @@ function cambiarIdioma(idioma) {
     if (nombreArchivo === 'index.html') {
         // Construir la URL del archivo de idioma para la versión en inglés del index.html
         if (idioma === 'en') {
-            var nuevaUrl = urlActual.replace('Lang/es/', '');
+            var nuevaUrl = ('../../'+ nombreArchivo);
         } else {
-            var nuevaUrl = ('/Lang/' + idioma + '/' + nombreArchivo);
+            var nuevaUrl = ('../../Lang/' + idioma + '/' + nombreArchivo);
         }
     } else {
         // Construir la URL del archivo de idioma para otros archivos HTML
-        var nuevaUrl = ('/Lang/' + idioma + '/' + nombreArchivo);
+        var nuevaUrl = ('../../Lang/' + idioma + '/' + nombreArchivo);
     }
 
     // Redirigir al archivo de idioma
